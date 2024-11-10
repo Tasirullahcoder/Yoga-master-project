@@ -16,7 +16,7 @@ const classesSchema = new mongoose.Schema({
     required: true,
   },
   price: {
-    type: Number,
+    type: mongoose.Schema.Types.Mixed, // Allows both number and string for flexibility
     required: true,
   },
   videoLink: {
